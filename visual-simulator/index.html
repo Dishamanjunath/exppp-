@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Logic Gate Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+
+    <!-- Title and subtitle -->
+    <header class="header">
+      <h1>Digital Logic Gate Simulator</h1>
+      <p class="subtitle">
+        Toggle inputs A and B to see how eight basic logic gates respond instantly.
+      </p>
+    </header>
+
+    <!-- Input switches -->
+    <section class="inputs" aria-label="Inputs">
+      <div class="input-box">
+        <span class="input-label">Input A</span>
+        <button id="switch-a" class="switch" type="button" aria-pressed="false">
+          <span class="switch-knob"></span>
+        </button>
+        <span id="value-a" class="input-value">0</span>
+      </div>
+
+      <div class="input-box">
+        <span class="input-label">Input B</span>
+        <button id="switch-b" class="switch" type="button" aria-pressed="false">
+          <span class="switch-knob"></span>
+        </button>
+        <span id="value-b" class="input-value">0</span>
+      </div>
+    </section>
+
+    <div class="reset-row">
+      <button id="reset-button" class="reset-button" type="button">Reset</button>
+    </div>
+
+    <!-- Gate cards are created by script.js and placed here -->
+    <section id="gates" class="gates" aria-label="Gate outputs"></section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
